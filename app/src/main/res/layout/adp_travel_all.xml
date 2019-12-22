@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="5dp">
+
+    <ImageView
+        android:id="@+id/item_travel_pic"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:id="@+id/item_travel_name"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center_vertical"
+        android:text="天安门"
+        android:textColor="#fff"
+        android:textSize="18dp"
+        android:background="#00BFFF"/>
+</LinearLayout>

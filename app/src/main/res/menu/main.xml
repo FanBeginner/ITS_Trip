@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/g">
+
+        <item
+            android:id="@+id/homepage"
+            android:icon="@mipmap/icon_home"
+            android:title="首页" />
+    </group>
+    <group android:id="@+id/g1">
+
+        <item
+            android:id="@+id/person"
+            android:icon="@mipmap/icon_person"
+            android:title="个人中心" />
+        <item
+            android:id="@+id/users"
+            android:icon="@mipmap/icon_users"
+            android:title="用户中心" />
+        <item
+            android:id="@+id/etc"
+            android:icon="@mipmap/icon_etc"
+            android:title="ETC账户" />
+    </group>
+
+    <group android:id="@+id/g2">
+        <item
+            android:id="@+id/environment"
+            android:icon="@mipmap/icon_env"
+            android:title="环境指标" />
+    </group>
+    <group android:id="@+id/g3">
+        <item
+            android:id="@+id/bus"
+            android:icon="@mipmap/icon_bus"
+            android:title="公交查询" />
+        <item
+            android:id="@+id/nearby"
+            android:icon="@mipmap/icon_nearby"
+            android:title="周边搜索" />
+
+    </group>
+    <group android:id="@+id/g4">
+        <item
+            android:id="@+id/travel"
+            android:icon="@mipmap/icon_travel"
+            android:title="旅游推荐" />
+        <item
+            android:id="@+id/news"
+            android:icon="@mipmap/icon_news"
+            android:title="汽车资讯" />
+    </group>
+    <group android:id="@+id/g5">
+        <item
+            android:id="@+id/suggest"
+            android:icon="@mipmap/icon_suggest"
+            android:title="建议中心" />
+        <item
+            android:id="@+id/feedback"
+            android:icon="@mipmap/icon_feedback"
+            android:title="用户反馈" />
+        <item
+            android:id="@+id/about"
+            android:icon="@mipmap/icon_about"
+            android:title="关于我们" />
+
+    </group>
+
+    <group android:id="@+id/g6">
+        <item
+            android:id="@+id/logout"
+            android:icon="@mipmap/icon_logout"
+            android:title="注销" />
+    </group>
+
+</menu>

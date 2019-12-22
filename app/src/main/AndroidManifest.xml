@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fan.its_trip">
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- 获取访问手机振动器权限，用于导航过程中的震动提示 -->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <!-- 获取摄像头权限，用于AR步行导航 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+    <!-- 允许程序访问额外的定位提供者指令获取模拟定位信息 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!-- 读写sd卡 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 写sd卡 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+
+    <!-- 更改wifi连状态 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 后台服务 -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <!-- OpenGLES 2.0 -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="BaiduMobAd_STAT_ID"
+            android:value="48ae76de3f" />
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="stdKPO4SEUxcwxpQp0lkeGgh44DijP5H"/>
+        <activity android:name=".activity.WelcomeActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".activity.SetIpActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.WNaviGuideActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.BNaviGuideActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.DNaviGuideActivity" />
+        <activity android:name=".activity.BusLineSearchActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name=".activity.NearbyActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name=".activity.TravelDetailActivity" />
+        <activity android:name=".activity.CarNewsDetailActivity" />
+
+        <service android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"/>
+    </application>
+
+</manifest>

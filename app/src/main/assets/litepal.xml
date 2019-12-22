@@ -1,0 +1,11 @@
+<litepal>
+    <dbname value="cool_weather"/>
+    <version value="3"/>
+    <list>
+        <mapping class="com.example.fan.its_trip.db.Province"/>
+        <mapping class="com.example.fan.its_trip.db.City"/>
+        <mapping class="com.example.fan.its_trip.db.County"/>
+        <mapping class="com.example.fan.its_trip.db.RechargeRecord"/>
+        <mapping class="com.example.fan.its_trip.db.SuggestInfo"/>
+    </list>
+</litepal>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/im_writefeedback"/>
+        <TextView
+            android:text="反馈意见"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textSize="20dp"/>
+    </LinearLayout>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/colorWhite">
+
+        <EditText
+            android:id="@+id/ed_sug_text"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:gravity="top"
+            android:hint="请输入您宝贵的意见或建议（500字以内）"
+            android:lines="6"
+            android:text="" />
+    </android.support.v7.widget.CardView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginVertical="20dp"
+        android:gravity="center"
+        android:text="欢迎您为我们提出宝贵的意见和建议，您留下的任何信息都将用来改善我们的软件。"
+        android:textSize="16dp"/>
+    <Button
+        android:id="@+id/btn_sug_commit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_background"
+        android:text="提交"
+        android:textSize="18dp"
+        android:layout_marginHorizontal="20dp"/>
+</LinearLayout>
